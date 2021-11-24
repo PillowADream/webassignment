@@ -16,6 +16,9 @@
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 .head {
     position: relative;
     margin: 0 auto;
@@ -33,16 +36,370 @@ a {
   font-size: 30px;
   color: #c81623;
 }
+.head ul .head_zc {
+  float: right;
+  margin: 30px 100px;
+}
+.head ul .head_zc a {
+  color: #c81623;
+  font-weight: 700;
+}
 .w {
   width: 1200px;
   margin: 20px auto;
 }
-.w ul .more {
-  list-style: none;
-}
-.w ul .more a {
+
+
+/* 大众导航 */
+/* 大众资源导航的引导字 */
+.w .dzzy_h {
   color: #c81623;
 }
-.w ul .more a:hover {
+.w .dzzy {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+/* 大众资源导航的主题内容 */
+.w .dzzy .dzzy_dh {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+/* 学吧导航 */
+.w ul .xbdh {
+  position: absolute;
+  margin-left: 10px;
+}
+.w ul .xbdh img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .xbdh a {
+  color: #c81623;
+  margin-left: 35px;
+}
+.w ul .xbdh a:hover {
+  color: pink;
+}
+/* 科塔学术 */
+.w ul .ktxs {
+  position: absolute;
+  margin-left: 300px;
+}
+.w ul .ktxs img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w .dzzy ul .ktxs a {
+  color: #c81623;
+  margin-left: 35px;
+}
+.w ul .ktxs a:hover {
+  color: pink;
+}
+/* ppt导航 */
+.w ul .ppt_Her {
+  position: absolute;
+  margin-left: 600px;
+}
+.w ul .ppt_Her img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w .dzzy ul .ppt_Her a {
+  color: #c81623;
+  margin-left: 80px;
+}
+.w ul .ppt_Her a:hover {
+  color: pink;
+}
+/* 阿猫阿狗导航 */
+.w ul .AmAg {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 200px;
+}
+.w ul .AmAg img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .AmAg a {
+  color: #c81623;
+  margin-left: 25px;
+}
+.w ul .AmAg a:hover {
+  color: pink;
+}
+/* 创造狮导航 */
+.w ul .Czs {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+.w ul .Czs img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w .dzzy ul .Czs a {
+  color: #c81623;
+  margin-left: 40px;
+}
+.w ul .Czs a:hover {
+  color: pink;
+}
+/* 大数据导航 */
+.w ul .Dsj {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 200px;
+}
+.w ul .Dsj img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w .dzzy ul .Dsj a {
+  color: #c81623;
+  margin-left: 80px;
+}
+.w ul .Dsj a:hover {
+  color: pink;
+}
+/* 语言学习资源导航 */
+.w ul .ztHl {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 400px;
+}
+.w ul .ztHl img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .ztHl a {
+  color: #c81623;
+  margin-left: 50px;
+}
+.w ul .ztHl a:hover {
+  color: pink;
+}
+/* wiki */
+.w ul .wiki {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 400px;
+}
+.w ul .wiki img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w .dzzy ul .wiki a {
+  color: #c81623;
+  margin-left: 40px;
+}
+.w ul .wiki a:hover {
+  color: pink;
+}
+
+
+
+/* 专业领域资源导航 */
+.w .zyly_he {
+  margin-top: 660px;
+}
+.w .zyly_h {
+  color: #c81623;
+}
+/* 专业领域资源导航主要内容 */
+.w .zyly_dh {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.w .zyly {
+
+  margin: 0 auto;
+  margin-left: 100px;
+  position: relative;
+}
+/* 雪球导航 */
+.w ul .xueqiu {
+  position: absolute;
+  margin-left: 10px;
+}
+.w ul .xueqiu img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .xueqiu a {
+  color: #c81623;
+  margin-left: 1px;
+}
+.w ul .xueqiu a:hover {
+  color: pink;
+}
+/* seeseed导航 */
+.w ul .seeseed {
+  position: absolute;
+  margin-left: 300px;
+}
+.w ul .seeseed img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .seeseed a {
+  color: #c81623;
+  margin-left: 20px;
+}
+.w ul .seeseed a:hover {
+  color: pink;
+}
+/* addog导航 */
+.w ul .addog {
+  position: absolute;
+  margin-left: 600px;
+}
+.w ul .addog img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .addog a {
+  color: #c81623;
+  margin-left: 30px;
+}
+.w ul .addog a:hover {
+  color: pink;
+}
+/* 聚法导航 */
+.w ul .jf_nav {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 200px;
+}
+.w ul .jf_nav img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .jf_nav a {
+  color: #c81623;
+  margin-left: 30px;
+}
+.w ul .code_nav a:hover {
+  color: pink;
+}
+/* finaudit会计审计导航 */
+.w ul .finaudit {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+.w ul .finaudit img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .finaudit a {
+  color: #c81623;
+  margin-left: 20px;
+}
+.w ul .finaudit a:hover {
+  color: pink;
+}
+/* MDN */
+.w ul .mdnweb {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 200px;
+}
+.w ul .mdnweb img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .mdnweb a {
+  color: #c81623;
+  margin-left: 50px;
+}
+.w ul .mdnweb a:hover {
+  color: pink;
+}
+
+
+/* 专业领域门户/论坛 */
+.w .zylymh_he {
+  margin-top: 460px;
+  margin-bottom: 400px;
+}
+.w .zylymh_h {
+  color: #c81623;
+}
+/* 专业领域资源导航主要内容 */
+.w .zylymh_dh {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.w .zylymh {
+  margin: 0 auto;
+  margin-left: 100px;
+  position: relative;
+}
+/* 小木虫导航 */
+.w ul .xmc {
+  position: absolute;
+  margin-left: 10px;
+}
+.w ul .xmc img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .xmc a {
+  color: #c81623;
+  margin-left: 20px;
+}
+.w ul .xmc a:hover {
+  color: pink;
+}
+/* github */
+.w ul .git_hub {
+  position: absolute;
+  margin-left: 300px;
+}
+.w ul .git_hub img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .git_hub a {
+  color: #c81623;
+  margin-left: 10px;
+}
+.w ul .git_hub a:hover {
+  color: pink;
+}
+/* 经管之家 */
+.w ul .jgzj {
+  position: absolute;
+  margin-left: 600px;
+}
+.w ul .jgzj img {
+  display: block;
+  width: 250px;
+  height: 175px;
+}
+.w ul .jgzj a {
+  color: #c81623;
+  margin-left: 100px;
+}
+.w ul .jgzj a:hover {
   color: pink;
 }
