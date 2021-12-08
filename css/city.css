@@ -1,0 +1,42 @@
+.all_in {
+    /* position: relative; */
+    background: url(../images/aiouniya.png) no-repeat;
+     background-size: 100% 50%;
+}
+.map {
+    /* z-index: -1; */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+.shortcut {
+    height: 66px;
+    background:hsla(180, 3%, 6%, 0.5);
+}
+/* 城市主体 */
+.city_aony {
+    top: 500px;
+    left: 0;
+    height: 520px;
+    z-index: 1;
+    /* padding-top: 200px;
+    padding-left: 150px; */
+}
+.content_city {
+    background-color: black;
+    height: 500px;
+/*     padding-top: 50px; */
+    padding-left: 150px;
+    height: 600px;
+}
+.content_city_body {
+    float: left;
+    /* background-color: #fff; */
+    width: 1200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.content_city_body p {
+    color: blanchedalmond;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <!-- 快捷导航模块 start -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <a href="../index.html">
+                    <img src="../images/log.jpg" alt="">
+                 </a>
+            </div>
+            <div class="header_navbar">
+                <a href="../index.html" class="header_navbar_main">
+                    首&nbsp页
+                </a>
+                <a href="../projiectname/news.html" class="header_navbar_news">
+                    新&nbsp闻
+                </a>
+                <a href="../projiectname/city.html" class="header_navbar_city">
+                    城&nbsp邦
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷导航模块 end -->
+    <!-- 登录 -->
+    <div class="w">
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <div class="login">我有账号，去<a href="#">登录</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="">
+                    <ul>
+                        <li class="Phone">
+                            <label for="">手机号：</label>
+                            <input type="text" class="inp">
+                        </li>
+                        <li>
+                            <label for="">短信验证码：</label>
+                            <input type="text" class="inp">
+                            <span class="success"> <i class="success_icon"></i> 短信验证码输入正确输入</span>
+                        </li>
+                        <li>
+                            <label for="">登录密码：</label>
+                            <input type="password" class="inp">
+                            <span class="error"> <i class="error_icon"></i> 密码格式不正确，请重新输入</span>
+                        </li>
+                        <li class="safe">安全程度 <em class="ruo">弱</em> <em class="zhong">中</em> <em class="qiang">强</em> </li>
+                        <li>
+                            <label for="">确认密码：</label>
+                            <input type="password" class="inp">
+                            <span class="error"> <i class="error_icon"></i> 密码格式不正确，请重新输入</span>
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox" name="" id="">
+                            同意协议并注册
+                            <a href="#">《知晓用户协议》</a>
+                        </li>
+
+                    </ul>
+                </form>
+                <li>
+                    <input type="submit" value="提交注册" class="btn" onclick="checkPhoneNumber()">
+                </li>
+            </div>
+        </div>
+    </div>
+    <footer></footer> 
+    <!--script-->
+    <script type="text/javascirpt" src = "../js/jquery.js"></script>
+    <script>
+        function checkPhoneNumber(){
+            var phoneNumber = document.getElementsByClassName("inp")[0].value;
+            var regtest = /^1\d{10}$/
+            if(regtest.test(phoneNumber)){
+                document.getElementsByClassName("Phone")[0].innerHTML ="<label for=''>手机号：</label><input type='text' class='inp'><span class='success'> <i class='success_icon'></i></span>";
+            }else{
+                document.getElementsByClassName("Phone")[0].innerHTML ="<label for=''>手机号：</label><input type='text' class='inp'><span class='error'> <i class='error_icon'></i>输入的手机号不正确</span>";
+            }
+            
+        }
+    </script> 
+</body>
+</html>

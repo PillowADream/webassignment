@@ -1,84 +1,79 @@
-/* 申明字体图标 这里一定要注意路径的变化 */
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?tomleg');
-    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
-      url('../fonts/icomoon.woff?tomleg') format('woff'),
-      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 /* 版心 */
-.m {
+.w {
     width: 1200px;
     margin: 0 auto;
 }
-/* 底部模块 */
-.footer {
-    height: 415px;
-    background-color: #f5f5f5;
-    padding-top: 30px;
-}
-.mod_service {
-    height: 80px;
-    border-bottom: 1px solid #ccc;
-}
-.mod_service ul li {
+.fl {
     float: left;
-    width: 300px;
-    height: 50px;
-    padding-left: 35px;
 }
-.mod_service ul li h5 {
+.header_navbar {
+    float:left;
+}
+.fr {
+    float: right;
+}
+.style_red {
+    color: #c81623;
+}
+/* 快捷导航模块 */
+.shortcut {
+    height: 66px;
+    background-color: #f1f1f1;
+}
+.shortcut .fl img {
+    height: 66px;
+}
+.shortcut .fr a {
     float: left;
-    height: 50px;
-    width: 50px;
-    background: url(../images/icons.png) no-repeat -252px -2px;
-    margin-right: 8px;
+    line-height: 66px;
+    padding-right: 10px;
+    color: #c81623;
+    font-family: 'icomoon';
 }
-.service_text h4 {
-    font-size: 14px;
-}
-.service_text p {
-    font-size: 12px;
-}
-.mod_help {
-    height: 185px;
-    border-bottom: 1px solid #ccc;
-    padding-top: 20px;
+.shortcut .header_navbar .header_navbar_main  {
+    float: left;
+    height: 66px;
+    line-height: 66px;
     padding-left: 50px;
+    color: #c81623;
 }
-.mod_help dl {
+.shortcut .header_navbar .header_navbar_city {
     float: left;
-    width: 200px;
-}
-.mod_help dl:last-child {
-    width: 100px;
-    text-align: center;
-}
-.mod_help dl dt {
-    font-size: 16px;
-    margin-bottom: 10px;
-    /* color: #c81623; */
-}
-.mod_help dl dd a {
+    height: 66px;
+    line-height: 66px;
+    padding-left: 50px;
     color: #c81623;
 }
-.mod_copyright {
-    text-align: center;
-    padding-top: 20px;
+/* 选择所有的偶数的小li */
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
 }
-.links {
-    margin-bottom: 15px;
-}
-.links a {
-    margin: 0 3px;
+.shortcut .header_navbar .header_navbar_news {
+    float: left;
+    height: 66px;
+    line-height: 66px;
+    padding-left: 50px;
     color: #c81623;
+} 
+.blur {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
-.copyright {
-    line-height: 20px;
+footer {
+    height: 200px;
+    border-top: rgb(185, 140, 71) solid;
+    background-color: black;
 }
