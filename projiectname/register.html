@@ -7,28 +7,39 @@
     <title>表单页</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/ejs.js"></script>
 </head>
 <body>
     <!-- 快捷导航模块 start -->
-    <section class="shortcut">
-        <div class="w">
+    <section class="shortcut" id="head">
+        <!-- <div class="w">
             <div class="fl">
                 <a href="../index.html">
                     <img src="../images/log.jpg" alt="">
                  </a>
             </div>
             <div class="header_navbar">
-                <a href="../index.html" class="header_navbar_main">
-                    首&nbsp页
-                </a>
-                <a href="../projiectname/news.html" class="header_navbar_news">
-                    新&nbsp闻
-                </a>
-                <a href="../projiectname/city.html" class="header_navbar_city">
-                    城&nbsp邦
-                </a>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="header_navbar_main" id = "header_navbar_fir">
+                            首&nbsp页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../projiectname/news.html" class="header_navbar_news" id = "header_navbar_sec">
+                            新&nbsp闻
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../projiectname/city.html" class="header_navbar_city" id = "header_navbar_th">
+                            城&nbsp邦
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- 快捷导航模块 end -->
     <!-- 登录 -->
@@ -43,23 +54,39 @@
                     <ul>
                         <li class="Phone">
                             <label for="">手机号：</label>
-                            <input type="text" class="inp">
+                            <input type="text" value="未输入手机号" class="inp" id="ph_num">
+                        </li>
+                        <li>
+                            <label for="">性别：</label>
+                            <input type="radio" name="sex" value="male">男
+                            <input type="radio" name="sex" value="female">女
+                        </li>
+                        <li>
+                            <label for="">地区：</label>
+                            <select name="" id="">
+                                <option value="">北京</option>
+                                <option value="">南京</option>
+                                <option value="">东京</option>
+                                <option value="">西京</option>
+                                <option value="">上京</option>
+                                <option value="">汴京</option>
+                            </select>
                         </li>
                         <li>
                             <label for="">短信验证码：</label>
-                            <input type="text" class="inp">
+                            <input type="text" value="未输入验证码" class="inp" id='sms'>
                             <span class="success"> <i class="success_icon"></i> 短信验证码输入正确输入</span>
                         </li>
                         <li>
                             <label for="">登录密码：</label>
-                            <input type="password" class="inp">
-                            <span class="error"> <i class="error_icon"></i> 密码格式不正确，请重新输入</span>
+                            <input type="password" class="inp" id="pwd">
+                            <span class="message"></span>
                         </li>
                         <li class="safe">安全程度 <em class="ruo">弱</em> <em class="zhong">中</em> <em class="qiang">强</em> </li>
                         <li>
                             <label for="">确认密码：</label>
                             <input type="password" class="inp">
-                            <span class="error"> <i class="error_icon"></i> 密码格式不正确，请重新输入</span>
+                            <span class="message"></span>
                         </li>
                         <li class="agree">
                             <input type="checkbox" name="" id="">
@@ -86,9 +113,51 @@
                 document.getElementsByClassName("Phone")[0].innerHTML ="<label for=''>手机号：</label><input type='text' class='inp'><span class='success'> <i class='success_icon'></i></span>";
             }else{
                 document.getElementsByClassName("Phone")[0].innerHTML ="<label for=''>手机号：</label><input type='text' class='inp'><span class='error'> <i class='error_icon'></i>输入的手机号不正确</span>";
+            }  
+        }
+        //短信的默认信息显示和消失
+        var sms = document.getElementById('sms');
+        sms.onfocus = function() {
+            if(this.value == '未输入验证码')
+            {
+                this.value='';
             }
-            
+            this.style.color = '#333';
+        }
+        sms.onblur = function() {
+            if(this.value == ''){
+                this.value = '未输入验证码';
+            }
+            this.style.color = '#999'
+        }
+        //手机号默认信息的显示和消失
+        var ph_num = document.getElementById('ph_num');
+        ph_num.onfocus = function() {
+            if(this.value == '未输入手机号')
+            {
+                this.value='';
+            }
+            this.style.color = '#333';
+        }
+        ph_num.onblur = function() {
+            if(this.value == ''){
+                this.value = '未输入手机号';
+            }
+            this.style.color = '#999'
+        }
+        //密码部分信息的正确和错误
+        var pwd = document.getElementById('pwd');
+        var message = document.querySelector('.message');
+        var img_icon = document.querySelector('.error_icon');
+        pwd.onblur = function() {
+            //根据表单里面值的长度
+            if(this.value.length < 6 || this.value.length > 16) {
+                message.innerHTML = ' <span class="error"> <i class="error_icon"></i> 密码格式不正确，请重新输入</span>';
+            }else {
+                message.innerHTML = '<span class="success"> <i class="successs_icon"></i> 密码格式正确</span>';
+            }
         }
     </script> 
 </body>
+<script src="../js/otherheader.js"></script>
 </html>

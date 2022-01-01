@@ -19,6 +19,41 @@ a {
 .header_navbar {
     float:left;
 }
+/* .header_navbar ul {
+    position: relative;
+} */
+.header_navbar ul li {
+    position: relative;
+}
+.header_navbar ul li a {
+    position: absolute;
+}
+/* .header_navbar ul li a:hover {
+    color: black;
+} */
+.header_navbar ul #header_navbar_fir {
+    top: 0;
+    left: 0;
+}
+.header_navbar ul #header_navbar_sec {
+    top: 0;
+    left: 120px;
+}
+.header_navbar ul #header_navbar_th {
+    top: 0;
+    left: 240px;
+}
+.header_navbar ul #header_navbar_th ul {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    width: 100%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.header_navbar ul #header_navbar_th ul li {
+    border-bottom: 1px solid #ccc;
+}
 .fr {
     float: right;
 }

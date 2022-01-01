@@ -7,34 +7,45 @@
     <title>主页</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- 引入js文件 -->
     <script src="js/animate.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/ejs.js"></script>
 </head>
 <body>
      <!-- 快捷导航模块 start -->
-     <section class="shortcut">
-        <div class="w">
+     <section class="shortcut" id="head">
+        <!-- <div class="w">
             <div class="fl">
                 <a href="index.html">
                     <img src="images/log.jpg" alt="">
                  </a>
             </div>
             <div class="header_navbar">
-                <a href="index.html" class="header_navbar_main">
-                    首&nbsp页
-                </a>
-                <a href="projiectname/news.html" class="header_navbar_news">
-                    新&nbsp闻
-                </a>
-                <a href="projiectname/city.html" class="header_navbar_city">
-                    城&nbsp邦
-                </a>
+                <ul>
+                    <li>
+                        <a href="index.html" class="header_navbar_main" id = "header_navbar_fir">
+                            首&nbsp页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projiectname/news.html" class="header_navbar_news" id = "header_navbar_sec">
+                            新&nbsp闻
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projiectname/city.html" class="header_navbar_city" id = "header_navbar_th">
+                            城&nbsp邦
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="fr">
                 <a href="projiectname/register.html">注&nbsp册</a>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- 快捷导航模块 end -->
     <!-- 视屏播放部分 start-->
@@ -93,6 +104,30 @@
 
                 </table>
         </div> -->
+        <div class="tab">
+            <div class="tab_list">
+                <ul>
+                    <li class="current">最新</li>
+                    <li>新闻</li>
+                    <li>公告</li>
+                    <li>活动</li>
+                </ul>
+            </div>
+            <div class="tab_con">
+                <div class="item" style="display: block;">
+                    最新模块
+                </div>
+                <div class="item">
+                    新闻模块
+                </div>
+                <div class="item"> 
+                    公告模块
+                </div>
+                <div class="item">
+                    活动模块
+                </div>
+            </div>
+        </div>
     </section>
     <!-- 主体 end -->
     <!-- city start -->
@@ -113,4 +148,5 @@
     <!-- city end -->
     <footer></footer>
 </body>
+<script src="js/indexheader.js"></script>
 </html>

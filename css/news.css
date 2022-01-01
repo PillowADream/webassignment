@@ -5,8 +5,62 @@
 .map {
     /* z-index: -1; */
     /* position: absolute; */
+    position: relative;
     top: 0;
     left: 0;
+}
+/* .map {
+    position: relative;
+    width: 747px;
+    height: 617px;
+    background: url(media/map.png);
+    margin: 0 auto;
+} */
+.city {
+    position: absolute;
+    top: 145px;
+    right: 385px;
+    color: #fff;
+}
+.dotted {
+    width: 8px;
+    height: 8px;
+    background-color: #09f;
+    border-radius: 4px;
+}
+.city div[class^="pulse"] {
+    /* 保证我们小波纹在父盒子里面水平垂直居中 放大之后就会中心向四周发散 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 12px #009dfd;
+    border-radius: 50%;
+    animation: pulse 1.2s linear infinite;
+}
+.city div.pulse2 {
+    animation-delay: 0.4s;
+}
+.city div.pulse3 {
+    animation-delay: 0.8s;
+}
+@keyframes pulse {
+    0% {
+
+    }
+    70% {
+        /* transform: scale(5); 我们不要用scale 因为他会让阴影变大 */
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
 }
 .shortcut {
     height: 66px;
@@ -69,12 +123,18 @@
     padding-left: 10px;
     /* position: relative; */
 }
+/* .content_footer li:hover {
+    border: 1px solid black;
+} */
 .news_footer .content_footer img{
     width: 300px;
     min-height: 127px;
 }
 .news_footer .content_footer h3 {
     color: #000; 
+}
+.border_solid {
+    border: 2px solid black;
 }
 .recommend_imgwrap_tag2 {
     display: inline-block;

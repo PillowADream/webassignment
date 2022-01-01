@@ -7,35 +7,58 @@
     <title>列表页</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/ejs.js"></script>
 </head>
 <body>
     <div class="all_in">
         <div class="map">
+            <div class="city">
+                <div class="dotted"></div>
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
+                <div class="pulse3"></div>
+            </div>
+            <!-- <div class="city2">
+                <div class="dotted"></div>
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
+                <div class="pulse3"></div>
+            </div> -->
             <!-- <img src="../images/map.png" alt=""> -->
         </div>
         <!-- 快捷导航模块 start -->
-        <section class="shortcut">
-            <div class="w">
+        <section class="shortcut" id="head">
+            <!-- <div class="w">
                 <div class="fl">
                     <a href="../index.html">
                         <img src="../images/log.jpg" alt="">
                      </a>
                 </div>
                 <div class="header_navbar">
-                    <a href="../index.html" class="header_navbar_main">
-                        首&nbsp页
-                    </a>
-                    <a href="../projiectname/news.html" class="header_navbar_news">
-                        新&nbsp闻
-                    </a>
-                    <a href="../projiectname/city.html" class="header_navbar_city">
-                        城&nbsp邦
-                    </a>
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="header_navbar_main" id = "header_navbar_fir">
+                                首&nbsp页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../projiectname/news.html" class="header_navbar_news" id = "header_navbar_sec">
+                                新&nbsp闻
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../projiectname/city.html" class="header_navbar_city" id = "header_navbar_th">
+                                城&nbsp邦
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="fr">
                     <a href="register.html">注&nbsp册</a>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- 快捷导航模块 end -->
         <!-- 新闻模块 start -->
@@ -86,7 +109,6 @@
                                 </h3>
                             </div>
                         </a>
-                        
                     </li>
                     <li title="双城之战宝典">
                         <a href="https://lol.qq.com/act/a20211105arcane/index.html?e_code=500131">
@@ -120,5 +142,22 @@
     </div>
     
     <footer></footer>
+    <script>
+        // //获取元素
+        // var lis = document.querySelector('.content_footer').querySelector('li');
+        // //利用循环绑定注册事件
+        // for(var i = 0;i < lis.length;i++) {
+        //     //鼠标经过事件 onmouseover
+        //     lis[i].onmouseover = function() {
+        //         console.log(11);
+        //         this.className = 'border_solid';
+        //     }
+        //     //鼠标离开事件 onmouseout
+        //     /* lis[i].onmouseout = function() {
+        //         this.className = '';
+        //     } */
+        // }
+    </script>
 </body>
+<script src="../js/otherheader.js"></script>
 </html>

@@ -51,12 +51,54 @@ a {
     color: #c81623;
     font-family: 'icomoon';
 }
+.header_transform {
+    perspective: 500px;
+}
+.header_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+.header_box:hover {
+    transform: rotateX(84deg);
+}
+.header_navbar_main,
+ .header_navbar_bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .shortcut .header_navbar .header_navbar_main  {
     float: left;
     height: 66px;
     line-height: 66px;
     padding-left: 50px;
     color: #c81623;
+    white-space: nowrap;
+    animation: w 4s steps(10) forwards;
+    z-index: 1;
+    transform: translateZ(17.5px);
+}
+.shortcut .header_navbar .header_navbar_bottom {
+    float: left;
+    padding-top: 42px;
+    height: 66px;
+    line-height: 66px;
+    padding-left: 50px;
+    color: #c81623;
+    transform: translateY(17.5px) rotateX(-84deg);
+}
+@keyframes w {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
 }
 .shortcut .header_navbar .header_navbar_city {
     float: left;
@@ -175,6 +217,39 @@ video {
 .tableposition {
     
     margin: 0 auto;
+}
+/* 新闻栏切换模块 */
+.news .tab {
+    float: right;
+    margin-right: 300px;
+    margin-top: 50px;
+    width: 320px;
+    background:hsla(180, 4%, 10%, 0.3);
+}
+.news .tab .tab_list {
+    height: 30px;
+    border-bottom: 2px solid #fff;
+}
+.news .tab .tab_list ul li {
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.news .tab .tab_list ul .current {
+    color: burlywood;
+    background:hsla(180, 4%, 10%, 0.3);
+    border-bottom: 2px solid burlywood;
+}
+.news .tab .tab_con {
+    height: 200px;
+}
+.news .tab .tab_con .item {
+    font-size: 25px;
+    display: none;
 }
 /* city部分 */
 .city .city_list a p {
