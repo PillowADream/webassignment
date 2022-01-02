@@ -37,6 +37,14 @@
     padding-left: 10px;
     padding-bottom: 10px;
 }
+.content_city_body pre {
+    color: blue;
+}
+.content_city_body .jianbian {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(#e66465, #9198e5);
+}
 .content_city_body p {
     color: blanchedalmond;
 }
